@@ -4,7 +4,7 @@ A self-contained refund support demo with a mock CRM, strict policy checks, live
 
 ## Overview
 
-This project simulates a customer support workflow for refund requests. It combines:
+This project implements a customer support workflow for refund requests against mock CRM data. It combines:
 
 - a mock CRM with 15 customer profiles and order histories
 - a strict refund policy document used by the decision engine
