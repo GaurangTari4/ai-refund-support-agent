@@ -21,7 +21,7 @@ jobs:
           python-version: "3.11"
 
       - name: Check Python syntax
-        run: python -m py_compile app.py
+        run: python -B -c "import ast, pathlib; ast.parse(pathlib.Path('app.py').read_text(encoding='utf-8')); print('ok')"
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
