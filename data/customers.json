@@ -1,0 +1,365 @@
+[
+  {
+    "id": "CUS-1001",
+    "name": "Ava Patel",
+    "email": "ava.patel@example.com",
+    "tier": "Gold",
+    "fraudScore": 12,
+    "refundsLast180Days": 0,
+    "notes": "Fast responder, prefers email follow-up.",
+    "orders": [
+      {
+        "id": "ORD-7001",
+        "date": "2026-05-16",
+        "deliveredAt": "2026-05-20",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 129.99,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["TrailRunner Backpack"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1002",
+    "name": "Noah Williams",
+    "email": "noah.williams@example.com",
+    "tier": "Standard",
+    "fraudScore": 8,
+    "refundsLast180Days": 1,
+    "notes": "Requested size exchange in April.",
+    "orders": [
+      {
+        "id": "ORD-7002",
+        "date": "2026-06-01",
+        "deliveredAt": "2026-06-05",
+        "status": "delivered",
+        "paymentStatus": "settled",
+        "chargebackOpen": false,
+        "total": 74.5,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Canvas Slip-On Shoes"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1003",
+    "name": "Mia Chen",
+    "email": "mia.chen@example.com",
+    "tier": "VIP",
+    "fraudScore": 18,
+    "refundsLast180Days": 0,
+    "notes": "VIP account, policy still applies normally.",
+    "orders": [
+      {
+        "id": "ORD-7003",
+        "date": "2026-04-02",
+        "deliveredAt": "2026-04-07",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 219,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["NoiseBlock Pro Headphones"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1004",
+    "name": "Ethan Brooks",
+    "email": "ethan.brooks@example.com",
+    "tier": "Standard",
+    "fraudScore": 26,
+    "refundsLast180Days": 0,
+    "notes": "Digital-only customer.",
+    "orders": [
+      {
+        "id": "ORD-7004",
+        "date": "2026-06-03",
+        "deliveredAt": "2026-06-03",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 49,
+        "previousRefunds": 0,
+        "category": "digital_download",
+        "digitalUsagePercent": 0,
+        "items": ["Advanced Excel Video Course"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1005",
+    "name": "Sophia Garcia",
+    "email": "sophia.garcia@example.com",
+    "tier": "Silver",
+    "fraudScore": 11,
+    "refundsLast180Days": 0,
+    "notes": "Bought a final-sale warehouse item.",
+    "orders": [
+      {
+        "id": "ORD-7005",
+        "date": "2026-05-29",
+        "deliveredAt": "2026-06-01",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 38,
+        "previousRefunds": 0,
+        "category": "final_sale",
+        "items": ["Clearance Linen Shirt"],
+        "flags": ["final_sale"]
+      }
+    ]
+  },
+  {
+    "id": "CUS-1006",
+    "name": "Lucas Brown",
+    "email": "lucas.brown@example.com",
+    "tier": "Standard",
+    "fraudScore": 9,
+    "refundsLast180Days": 0,
+    "notes": "Carrier delay on current order.",
+    "orders": [
+      {
+        "id": "ORD-7006",
+        "date": "2026-06-02",
+        "deliveredAt": null,
+        "status": "in_transit",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 86.75,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Ceramic Dinner Set"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1007",
+    "name": "Isabella Martinez",
+    "email": "isabella.martinez@example.com",
+    "tier": "Gold",
+    "fraudScore": 4,
+    "refundsLast180Days": 0,
+    "notes": "Merchant cancelled due to stockout.",
+    "orders": [
+      {
+        "id": "ORD-7007",
+        "date": "2026-06-07",
+        "deliveredAt": null,
+        "status": "cancelled",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "cancellationReason": "stockout",
+        "total": 154,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Standing Desk Converter"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1008",
+    "name": "Liam Johnson",
+    "email": "liam.johnson@example.com",
+    "tier": "Standard",
+    "fraudScore": 78,
+    "refundsLast180Days": 3,
+    "notes": "Multiple recent refunds and high fraud score.",
+    "orders": [
+      {
+        "id": "ORD-7008",
+        "date": "2026-05-25",
+        "deliveredAt": "2026-05-30",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 96.2,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Smart Fitness Scale"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1009",
+    "name": "Olivia Smith",
+    "email": "olivia.smith@example.com",
+    "tier": "Silver",
+    "fraudScore": 14,
+    "refundsLast180Days": 0,
+    "notes": "Gift card purchase.",
+    "orders": [
+      {
+        "id": "ORD-7009",
+        "date": "2026-06-04",
+        "deliveredAt": "2026-06-04",
+        "status": "delivered",
+        "paymentStatus": "settled",
+        "chargebackOpen": false,
+        "total": 100,
+        "previousRefunds": 0,
+        "category": "gift_card",
+        "items": ["BajiMart Digital Gift Card"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1010",
+    "name": "Benjamin Davis",
+    "email": "benjamin.davis@example.com",
+    "tier": "Standard",
+    "fraudScore": 21,
+    "refundsLast180Days": 1,
+    "notes": "Has an open chargeback.",
+    "orders": [
+      {
+        "id": "ORD-7010",
+        "date": "2026-05-18",
+        "deliveredAt": "2026-05-22",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": true,
+        "total": 58.4,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Travel Steam Iron"],
+        "flags": ["chargeback"]
+      }
+    ]
+  },
+  {
+    "id": "CUS-1011",
+    "name": "Charlotte Wilson",
+    "email": "charlotte.wilson@example.com",
+    "tier": "Gold",
+    "fraudScore": 6,
+    "refundsLast180Days": 0,
+    "notes": "Opened hygiene item.",
+    "orders": [
+      {
+        "id": "ORD-7011",
+        "date": "2026-05-30",
+        "deliveredAt": "2026-06-03",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 42,
+        "previousRefunds": 0,
+        "category": "opened_hygiene",
+        "items": ["Electric Toothbrush Heads"],
+        "flags": ["opened"]
+      }
+    ]
+  },
+  {
+    "id": "CUS-1012",
+    "name": "James Lee",
+    "email": "james.lee@example.com",
+    "tier": "Standard",
+    "fraudScore": 10,
+    "refundsLast180Days": 0,
+    "notes": "Subscription billing issue candidate.",
+    "orders": [
+      {
+        "id": "ORD-7012",
+        "date": "2026-06-06",
+        "deliveredAt": "2026-06-06",
+        "status": "delivered",
+        "paymentStatus": "settled",
+        "chargebackOpen": false,
+        "total": 19.99,
+        "previousRefunds": 0,
+        "category": "subscription",
+        "items": ["BajiMart Plus Monthly"],
+        "flags": ["duplicate_charge"]
+      }
+    ]
+  },
+  {
+    "id": "CUS-1013",
+    "name": "Amelia Taylor",
+    "email": "amelia.taylor@example.com",
+    "tier": "Standard",
+    "fraudScore": 15,
+    "refundsLast180Days": 0,
+    "notes": "Perishable grocery order.",
+    "orders": [
+      {
+        "id": "ORD-7013",
+        "date": "2026-06-01",
+        "deliveredAt": "2026-06-02",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 64.1,
+        "previousRefunds": 0,
+        "category": "perishable",
+        "items": ["Organic Produce Box"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1014",
+    "name": "Henry Anderson",
+    "email": "henry.anderson@example.com",
+    "tier": "Silver",
+    "fraudScore": 5,
+    "refundsLast180Days": 0,
+    "notes": "Partial prior refund exists.",
+    "orders": [
+      {
+        "id": "ORD-7014",
+        "date": "2026-05-11",
+        "deliveredAt": "2026-05-15",
+        "status": "delivered",
+        "paymentStatus": "captured",
+        "chargebackOpen": false,
+        "total": 180,
+        "previousRefunds": 45,
+        "category": "bundle",
+        "bundleItemized": false,
+        "items": ["Home Office Starter Bundle"],
+        "flags": []
+      }
+    ]
+  },
+  {
+    "id": "CUS-1015",
+    "name": "Harper Moore",
+    "email": "harper.moore@example.com",
+    "tier": "Standard",
+    "fraudScore": 16,
+    "refundsLast180Days": 0,
+    "notes": "Uncaptured authorization only.",
+    "orders": [
+      {
+        "id": "ORD-7015",
+        "date": "2026-06-08",
+        "deliveredAt": null,
+        "status": "processing",
+        "paymentStatus": "authorized",
+        "chargebackOpen": false,
+        "total": 72.8,
+        "previousRefunds": 0,
+        "category": "standard_physical",
+        "items": ["Compact Air Purifier"],
+        "flags": []
+      }
+    ]
+  }
+]
