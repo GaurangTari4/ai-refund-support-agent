@@ -1,0 +1,9 @@
+{
+  "name": "ai-refund-support-agent",
+  "version": "1.0.0",
+  "description": "LLM-powered refund support agent with CRM mock data, strict policy tools, chat UI, voice input, and live admin reasoning logs.",
+  "scripts": {
+    "start": "python app.py",
+    "dev": "python app.py"
+  }
+}
