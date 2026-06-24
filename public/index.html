@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BajiMart Customer Support Agent</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="workspace">
+        <header class="topbar">
+          <div>
+            <p class="eyebrow">BajiMart Refund Ops</p>
+            <h1>BajiMart Customer Support Agent</h1>
+          </div>
+          <div class="status-strip">
+            <span id="connectionDot" class="dot"></span>
+            <span id="connectionText">Connecting</span>
+          </div>
+        </header>
+
+        <div class="panes">
+          <section class="chat-pane" aria-label="Customer chat">
+            <div class="customer-row">
+              <label for="customerSelect">Customer</label>
+              <div class="customer-picker">
+                <input id="customerSearch" type="search" placeholder="Search customer or order ID" aria-label="Search customer or order ID" />
+                <select id="customerSelect"></select>
+              </div>
+            </div>
+
+            <div id="customerSnapshot" class="snapshot"></div>
+
+            <div class="workspace-toolbar">
+              <div class="runtime-group">
+                <div class="runtime-chip" id="runtimeChip">Loading runtime</div>
+                <label class="model-picker" for="modelSelect">
+                  <span>Local model</span>
+                  <select id="modelSelect" aria-label="Choose local model"></select>
+                </label>
+              </div>
+              <div class="scenario-rail" aria-label="Example refund scenarios">
+                <button class="scenario-button" type="button" data-scenario="approved">Approve</button>
+                <button class="scenario-button" type="button" data-scenario="denied">Deny</button>
+                <button class="scenario-button" type="button" data-scenario="review">Manual review</button>
+                <button class="scenario-button" type="button" data-scenario="missing">Need order ID</button>
+              </div>
+            </div>
+
+            <div id="chatLog" class="chat-log" aria-live="polite"></div>
+
+            <form id="chatForm" class="composer">
+              <button id="micButton" class="icon-button" type="button" title="Start voice input" aria-label="Start voice input">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                  <path d="M12 14a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v5a3 3 0 0 0 3 3Z"></path>
+                  <path d="M19 11a7 7 0 0 1-14 0"></path>
+                  <path d="M12 18v3"></path>
+                  <path d="M8 21h8"></path>
+                </svg>
+              </button>
+              <input id="messageInput" autocomplete="off" placeholder="Ask for a refund using an order ID, e.g. ORD-7001 damaged item" />
+              <button class="send-button" type="submit">Send</button>
+            </form>
+
+            <div class="voice-row">
+              <label class="toggle">
+                <input id="speakReplies" type="checkbox" />
+                <span>Speak replies</span>
+              </label>
+              <span id="voiceStatus">Voice ready when supported by this browser.</span>
+            </div>
+          </section>
+
+          <aside class="admin-pane" aria-label="Admin dashboard">
+            <div class="admin-head">
+              <div>
+                <p class="eyebrow">Live Agent Trace</p>
+                <h2>Reasoning Log</h2>
+              </div>
+              <button id="clearLogs" class="ghost-button" type="button">Clear View</button>
+            </div>
+
+            <div id="decisionPanel" class="decision-panel neutral">
+              <span class="decision-label">Waiting</span>
+              <strong>No decision yet</strong>
+              <p>Send a refund request to watch tool calls and policy checks stream here.</p>
+            </div>
+
+            <div class="metrics">
+              <div>
+                <span id="toolCount">0</span>
+                <small>Tool calls</small>
+              </div>
+              <div>
+                <span id="caseCount">0</span>
+                <small>Cases</small>
+              </div>
+              <div>
+                <span id="policyCount">15</span>
+                <small>Profiles</small>
+              </div>
+            </div>
+
+            <section class="signal-card" aria-label="Operational signals">
+              <div>
+                <small>Voice pipeline</small>
+                <strong id="voiceRuntime">Checking support</strong>
+              </div>
+              <div>
+                <small>Policy date</small>
+                <strong id="policyDate">Loading</strong>
+              </div>
+              <div>
+                <small>Live session</small>
+                <strong id="sessionRuntime">Connected</strong>
+              </div>
+            </section>
+
+            <details class="policy-card">
+              <summary>Strict Refund Policy</summary>
+              <div id="policySummary" class="policy-summary"></div>
+            </details>
+
+            <section class="cases-panel" aria-label="Recent refund cases">
+              <div class="cases-head">
+                <strong>Recent Cases</strong>
+              </div>
+              <div id="caseList" class="case-list"></div>
+            </section>
+
+            <section class="activity-panel" aria-label="Recent agent activity">
+              <div class="cases-head">
+                <strong>Live Activity</strong>
+              </div>
+              <div id="activityList" class="activity-list"></div>
+            </section>
+
+            <div id="traceLog" class="trace-log"></div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <template id="messageTemplate">
+      <article class="message">
+        <div class="bubble"></div>
+      </article>
+    </template>
+
+    <template id="traceTemplate">
+      <article class="trace-item">
+        <div class="trace-type"></div>
+        <div>
+          <strong></strong>
+          <p></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="/app.js" type="module"></script>
+  </body>
+</html>
